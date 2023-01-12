@@ -35,7 +35,7 @@ export function Hi() {
             </Box>
           </Flex>
 
-          <Box pl='5'>
+          <Box pl='7'>
             <Text color='white' fontSize={['0.8rem', '1rem', '1.2rem']}>
               Have questions or comments? To get in touch, email
             </Text>
