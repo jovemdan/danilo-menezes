@@ -12,10 +12,10 @@ export function Hi() {
       >
         <Text
           as='h1'
-          fontSize={['45px', '4.5rem', '7rem']}
+          fontSize={['45px', '4.5rem', '5.5rem']}
           fontWeight='700'
           fontStyle='normal'
-          lineHeight={['65px', '70px', '120px']}
+          lineHeight={['65px', '70px', '100px']}
           color='#FF9900'
         >
           Hi, I'm Danilo Menezes
