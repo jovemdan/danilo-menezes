@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Text, Image, Flex } from '@chakra-ui/react'
 import Link from 'next/link'
 export function Hi() {
@@ -17,7 +18,7 @@ export function Hi() {
           lineHeight={['65px', '70px', '120px']}
           color='#FF9900'
         >
-          Hi, I`m Danilo Menezes
+          Hi, I'm Danilo Menezes
         </Text>
 
         <Flex flexDirection='column' gap='5' pt='6'>
@@ -26,7 +27,7 @@ export function Hi() {
 
             <Box>
               <Text color='white' fontSize={['0.8rem', '1rem', '1.2rem']}>
-                —I`m a software engineer passionate about transforming people`s
+                —I'm a software engineer passionate about transforming people`s
                 lives through technology. I like challenges and solving them
                 with code. I also help some people get into technology. I am
                 interested in participating in open source projects.
