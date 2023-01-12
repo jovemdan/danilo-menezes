@@ -28,9 +28,9 @@ export function Hi() {
             <Box>
               <Text color='white' fontSize={['0.8rem', '1rem', '1.2rem']}>
                 —I'm a software engineer passionate about transforming people`s
-                lives through technology. I like challenges and solving them
-                with code. I also help some people get into technology. I am
-                interested in participating in open source projects.
+                lives through technology. I like to solve challenges with codes.
+                I also help some people get into technology and i am interested
+                in participating in open source projects.
               </Text>
             </Box>
           </Flex>
