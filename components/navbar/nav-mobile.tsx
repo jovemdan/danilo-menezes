@@ -14,6 +14,7 @@ import {
   Image,
 } from '@chakra-ui/react'
 import { ActiveLink } from './active-link'
+import { Logo } from './logo'
 
 export function HeaderMobile() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -51,10 +52,10 @@ export function HeaderMobile() {
               <ActiveLink fontSize='2xl' onClick={onClose} href='/'>
                 Home
               </ActiveLink>
-              <ActiveLink fontSize='2xl' onClick={onClose} href='/posts'>
+              <ActiveLink fontSize='2xl' onClick={onClose} href='/projects'>
                 Projects
               </ActiveLink>
-              <ActiveLink fontSize='2xl' onClick={onClose} href='/projects'>
+              <ActiveLink fontSize='2xl' onClick={onClose} href='/blog'>
                 Blog
               </ActiveLink>
             </VStack>
