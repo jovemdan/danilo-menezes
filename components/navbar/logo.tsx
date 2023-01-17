@@ -5,7 +5,7 @@ export function Logo() {
   return (
     <NextLink href='/' passHref>
       <Box as='a'>
-        <Avatar name='Danilo Menezes' src='/github.svg' />
+        <Avatar name='Danilo Menezes' src='/perfil.png' />
       </Box>
     </NextLink>
   )
