@@ -7,7 +7,7 @@ export function Hi() {
       justifyContent='center'
       flexDirection='column'
       textAlign='left'
-      mt='32'
+      mt='24'
     >
       <Text
         as='h1'
