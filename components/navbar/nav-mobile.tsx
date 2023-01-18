@@ -22,7 +22,7 @@ export function HeaderMobile() {
   return (
     <>
       <Flex as='header' mt={8} justify='space-between' align='center'>
-        {/* <Logo /> */}
+        <Logo />
 
         <Icon
           as={HamburgerIcon}
