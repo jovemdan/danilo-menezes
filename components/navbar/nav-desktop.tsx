@@ -8,7 +8,7 @@ export function NavDesktop() {
     <Flex
       mt={8}
       maxW='854px'
-      gap='200px'
+      gap='175px'
       alignItems='center'
       alignContent='center'
     >
