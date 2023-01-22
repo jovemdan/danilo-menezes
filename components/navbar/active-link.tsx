@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import NextLink from 'next/link'
 import { Link, LinkProps } from '@chakra-ui/react'
 
 interface ActiveLinkProps extends LinkProps {
