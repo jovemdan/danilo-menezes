@@ -9,6 +9,9 @@ export function SelectedProjects() {
         fontWeight='700'
         lineHeight='36px'
         color='white'
+        cursor='pointer'
+        transition='0.9s'
+        _hover={{ color: '#FF9900' }}
       >
         Selected projects
       </Text>
