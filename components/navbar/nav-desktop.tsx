@@ -8,12 +8,12 @@ export function NavDesktop() {
     <Flex
       mt={8}
       maxW='854px'
-      gap='175px'
+      gap='190px'
       alignItems='center'
       alignContent='center'
     >
       <Logo />
-      <Flex as='nav' gap='78px' justifyContent='center'>
+      <Flex as='nav' gap='80px' justifyContent='center'>
         <ActiveLink href='/'>Home</ActiveLink>
         <ActiveLink href='/projects'>Projects</ActiveLink>
         <ActiveLink href='/blog'>Blog</ActiveLink>
