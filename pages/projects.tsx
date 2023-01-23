@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Image, useBreakpointValue } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { Navbar } from '../components/navbar'
 import { ProjectDescription } from '../components/projects'
 import { SelectedProjects } from '../components/projects/selected-projects'
