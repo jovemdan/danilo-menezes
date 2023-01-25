@@ -39,29 +39,31 @@ export function ProjectDescription({
           </Text>
         </Box>
         <Box maxW='622px'>
-          <Text
-            color='white'
-            fontWeight='700'
-            fontSize={['14px', '15px', '16px']}
-            cursor='pointer'
-            transition='0.9s'
-            _hover={{ color: '#FF9900' }}
-          >
-            {name}
-          </Text>
-          <Text
-            as='p'
-            fontWeight='700'
-            fontSize={['14px', '15px', '16px']}
-            color='white'
-            opacity={0.6}
-            alignItems='left'
-            mt='2px'
-            transition='0.9s'
-            _hover={{ opacity: 0.9 }}
-          >
-            {description}
-          </Text>
+          <Link href={projectUrl} target='_blank'>
+            <Text
+              color='white'
+              fontWeight='700'
+              fontSize={['14px', '15px', '16px']}
+              cursor='pointer'
+              transition='0.9s'
+              _hover={{ color: '#FF9900' }}
+            >
+              {name}
+            </Text>
+            <Text
+              as='p'
+              fontWeight='700'
+              fontSize={['14px', '15px', '16px']}
+              color='white'
+              opacity={0.6}
+              alignItems='left'
+              mt='2px'
+              transition='0.9s'
+              _hover={{ opacity: 0.9 }}
+            >
+              {description}
+            </Text>
+          </Link>
           <Link href={githubUrl} target='_blank'>
             <Text
               fontWeight='700'
