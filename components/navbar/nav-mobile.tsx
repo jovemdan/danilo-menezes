@@ -37,7 +37,7 @@ export function HeaderMobile() {
 
       <Drawer onClose={onClose} isOpen={isOpen} size='full'>
         <DrawerOverlay />
-        <DrawerContent bg='#000532' p={4}>
+        <DrawerContent bg='#010522' p={4}>
           <DrawerCloseButton color='#FF9900' size='lg' mt='6' />
           <DrawerBody
             h='100vh'
