@@ -1,12 +1,33 @@
-import { Box } from '@chakra-ui/react'
-import { Navbar } from '../components/navbar'
-
+import { Flex, Image, Text } from '@chakra-ui/react'
 export default function Blog() {
   return (
     <>
-      <Box maxWidth='860px' height='100vh' margin='0 auto' px={'10'}>
-        <Navbar />
-      </Box>
+      <Flex mt={['10', '12', '24']} gap='3'>
+        <Image src='/divider-small.svg' alt='divider' />
+        <Text
+          fontSize={['15px', '20px', '24px']}
+          fontWeight='700'
+          lineHeight='36px'
+          color='white'
+          cursor='pointer'
+          transition='0.9s'
+          _hover={{ color: '#FF9900' }}
+        >
+          Page under development
+        </Text>
+      </Flex>
+      <Image
+        src='/development.png'
+        alt='/development.png'
+        mt='50px'
+        w={['100%']}
+        bgSize='cover'
+        objectFit='cover'
+        bgRepeat='no-repeat'
+        borderRadius='9px'
+        transition='0.9s'
+        _hover={{ opacity: 0.5 }}
+      />
     </>
   )
 }
