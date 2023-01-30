@@ -1,7 +1,6 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Flex,
-  HStack,
   VStack,
   Icon,
   Drawer,
@@ -10,8 +9,6 @@ import {
   DrawerCloseButton,
   DrawerBody,
   useDisclosure,
-  Link,
-  Image,
 } from '@chakra-ui/react'
 import { SocialIcons } from '../hi/social-icons'
 import { ActiveLink } from './active-link'
