@@ -1,5 +1,4 @@
-import { Flex, HStack } from '@chakra-ui/react'
-
+import { Flex } from '@chakra-ui/react'
 import { ActiveLink } from './active-link'
 import { Logo } from './logo'
 
