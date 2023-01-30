@@ -20,7 +20,8 @@ export default function Blog() {
         src='/development.png'
         alt='/development.png'
         mt='50px'
-        w={['100%']}
+        w='400px'
+        h='400px'
         bgSize='cover'
         objectFit='cover'
         bgRepeat='no-repeat'
