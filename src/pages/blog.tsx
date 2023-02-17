@@ -16,19 +16,6 @@ export default function Blog() {
           Page under development
         </Text>
       </Flex>
-      <Image
-        src='/development.png'
-        alt='/development.png'
-        mt='50px'
-        w={['200', '400px']}
-        h={['200', '400px']}
-        bgSize='cover'
-        objectFit='cover'
-        bgRepeat='no-repeat'
-        borderRadius='9px'
-        transition='0.9s'
-        _hover={{ opacity: 0.5 }}
-      />
     </>
   )
 }
