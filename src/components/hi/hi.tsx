@@ -12,7 +12,7 @@ export function Hi() {
     >
       <Text
         as='h1'
-        fontSize={['45px', '4.5rem', '5.5rem']}
+        fontSize={['45px', '4.5rem']}
         fontWeight='700'
         fontStyle='normal'
         lineHeight={['65px', '70px', '100px']}
@@ -25,7 +25,7 @@ export function Hi() {
         <Flex gap='6'>
           <Image src='/divider.svg' alt='divider' />
 
-          <Box>
+          <Box maxWidth='635px'>
             <Text color='white' fontSize={['0.8rem', '1rem', '1.2rem']}>
               —I'm a software engineer passionate about transforming people`s
               lives through technology. I like to solve challenges with codes
