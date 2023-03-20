@@ -2,7 +2,7 @@ import { Flex, Image, Text } from '@chakra-ui/react'
 
 export function SelectedProjects() {
   return (
-    <Flex mt={['10', '12', '36']} gap='3'>
+    <Flex mt={['10', '12', '32']} gap='3'>
       <Image src='/divider-small.svg' alt='divider' />
       <Text
         fontSize={['15px', '20px', '24px']}
