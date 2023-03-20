@@ -15,14 +15,13 @@ export function ProjectDescription({
   name,
   description,
   image,
-  imageMobile,
   githubUrl,
   projectUrl,
 }: ProjectDescriptionProps) {
   return (
     <>
       <Flex
-        mt={25}
+        mt={[25, 25, 32]}
         gap={['20px', '20px', '87px']}
         flexDirection={['column', 'column', 'row']}
         cursor='pointer'
@@ -38,7 +37,7 @@ export function ProjectDescription({
             {year}
           </Text>
         </Box>
-        <Box maxW='622px'>
+        <Box maxW='450px'>
           <Link href={projectUrl} target='_blank'>
             <Text
               color='white'
