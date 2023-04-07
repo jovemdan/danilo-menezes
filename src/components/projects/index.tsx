@@ -21,7 +21,7 @@ export function ProjectDescription({
   return (
     <>
       <Flex
-        mt={[25, 25, 32]}
+        mt={[25, 25, 28]}
         gap={['20px', '20px', '87px']}
         flexDirection={['column', 'column', 'row']}
         cursor='pointer'
