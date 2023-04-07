@@ -9,8 +9,9 @@ export default function Blog() {
         <InputGroup>
           <InputRightElement
             pointerEvents='none'
-            children={<SearchIcon color='gray.300' />}
-          />
+          >
+            <SearchIcon color='gray.300' />
+          </InputRightElement>
           <Input type='tel' placeholder='Search posts...' focusBorderColor='#FF9900' />
         </InputGroup>
       </Box>
