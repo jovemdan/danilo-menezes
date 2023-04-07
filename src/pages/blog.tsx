@@ -1,20 +1,41 @@
-import { Flex, Image, Text } from '@chakra-ui/react'
+import { SearchIcon } from '@chakra-ui/icons'
+import { Box, Flex, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react'
+import { SelectedTitle } from '../components/common/selected-title'
 export default function Blog() {
   return (
     <>
-      <Flex mt={['10', '12', '24']} gap='3'>
-        <Image src='/divider-small.svg' alt='divider' />
-        <Text
-          fontSize={['15px', '20px', '24px']}
-          fontWeight='700'
-          lineHeight='36px'
-          color='white'
-          cursor='pointer'
-          transition='0.9s'
-          _hover={{ color: '#FF9900' }}
-        >
-          Page under development
-        </Text>
+      <SelectedTitle title='Selected posts' />
+      <Box mt={[25, 25, 28]} maxW='660px'>
+        <InputGroup>
+          <InputRightElement
+            pointerEvents='none'
+            children={<SearchIcon color='gray.300' />}
+          />
+          <Input type='tel' placeholder='Search posts...' focusBorderColor='#FF9900' />
+        </InputGroup>
+      </Box>
+      <Flex mt={[16]} maxW='660px' flexDirection='column' gap='30px'>
+        <Flex justifyContent='space-between' >
+          <Box>
+            <Text fontSize='14px'>Building a mapping platform with React and Mapbox</Text>
+            <Text fontSize='14px' color='#9A9A9A'>The intersection observer web API</Text>
+          </Box>
+          <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
+        </Flex>
+        <Flex justifyContent='space-between' >
+          <Box>
+            <Text fontSize='14px'>Building a mapping platform with React and Mapbox</Text>
+            <Text fontSize='14px' color='#9A9A9A'>The intersection observer web API</Text>
+          </Box>
+          <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
+        </Flex>
+        <Flex justifyContent='space-between' >
+          <Box>
+            <Text fontSize='14px'>Building a mapping platform with React and Mapbox</Text>
+            <Text fontSize='14px' color='#9A9A9A'>The intersection observer web API</Text>
+          </Box>
+          <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
+        </Flex>
       </Flex>
     </>
   )
