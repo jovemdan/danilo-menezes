@@ -1,10 +1,10 @@
+import { SelectedTitle } from '../components/common/selected-title'
 import { ProjectDescription } from '../components/projects'
-import { SelectedProjects } from '../components/projects/selected-projects'
 
 export default function Projects() {
   return (
     <>
-      <SelectedProjects />
+      <SelectedTitle title='Selected projects' />
       <ProjectDescription
         year=' 2023 - Now'
         name='Danilo Menezes'
