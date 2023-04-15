@@ -13,7 +13,7 @@ export default function Blog() {
           >
             <SearchIcon color='gray.300' />
           </InputRightElement>
-          <Input type='tel' placeholder='Search posts...' color={'gray.200'} focusBorderColor='#FF9900' />
+          <Input type='text' placeholder='Search posts...' color={'gray.200'} focusBorderColor='#FF9900' />
         </InputGroup>
       </Box>
       <Flex mt={[16]} maxW={['450px', '660px']} flexDirection='column' gap='30px'>
