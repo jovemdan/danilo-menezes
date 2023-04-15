@@ -5,8 +5,12 @@ export default function Blog() {
   return (
     <>
       <SelectedTitle title='Selected posts' />
-      {/* <Box mt={[25, 25, 28]} maxW='660px'>
+      <Box mt={[25, 25, 28]} maxW='660px'>
         <InputGroup>
+          {/* <InputRightElement
+            pointerEvents='none'
+            children={<SearchIcon color='gray.300' />}
+          /> */}
           <InputRightElement
             pointerEvents='none'
           >
@@ -37,7 +41,7 @@ export default function Blog() {
           </Box>
           <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
         </Flex>
-      </Flex> */}
+      </Flex>
     </>
   )
 }
