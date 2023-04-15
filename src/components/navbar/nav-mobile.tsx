@@ -10,12 +10,17 @@ import {
   DrawerBody,
   useDisclosure,
 } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 import { SocialIcons } from '../hi/social-icons'
 import { ActiveLink } from './active-link'
 import { Logo } from './logo'
 
 export function HeaderMobile() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const { asPath } = useRouter()
+
+  const isBlogDetails = asPath.startsWith('/blog/')
 
   return (
     <>
@@ -53,7 +58,7 @@ export function HeaderMobile() {
               <ActiveLink fontSize='2xl' onClick={onClose} href='/projects'>
                 Projects
               </ActiveLink>
-              <ActiveLink fontSize='2xl' onClick={onClose} href='/blog'>
+              <ActiveLink fontSize='2xl' onClick={onClose} href='/blog' pathWithParams={isBlogDetails ? asPath : undefined}>
                 Blog
               </ActiveLink>
             </VStack>

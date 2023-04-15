@@ -5,12 +5,19 @@ import { Link, LinkProps } from '@chakra-ui/react'
 interface ActiveLinkProps extends LinkProps {
   href: string
   children: string
+  pathWithParams?: string
 }
 
-export function ActiveLink({ href, children, ...rest }: ActiveLinkProps) {
+export function ActiveLink({ href, children, pathWithParams, ...rest }: ActiveLinkProps) {
   const { asPath } = useRouter()
+  let isActiveLink: boolean = false
 
-  const isActiveLink = asPath === href || asPath === ''
+  if (pathWithParams) {
+    isActiveLink = asPath === pathWithParams
+  }
+  else {
+    isActiveLink = asPath === href || asPath === ''
+  }
 
   return (
     <NextLink href={href} passHref>
