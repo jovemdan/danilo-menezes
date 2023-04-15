@@ -22,21 +22,21 @@ export default function Blog() {
       <Flex mt={[16]} maxW='660px' flexDirection='column' gap='30px'>
         <Flex justifyContent='space-between' >
           <Box>
-            <Text fontSize='14px'>Building a mapping platform with React and Mapbox</Text>
+            <Text fontSize='14px' color='white'>Building a mapping platform with React and Mapbox</Text>
             <Text fontSize='14px' color='#9A9A9A'>The intersection observer web API</Text>
           </Box>
           <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
         </Flex>
         <Flex justifyContent='space-between' >
           <Box>
-            <Text fontSize='14px'>Building a mapping platform with React and Mapbox</Text>
+            <Text fontSize='14px' color='white'>Building a mapping platform with React and Mapbox</Text>
             <Text fontSize='14px' color='#9A9A9A'>The intersection observer web API</Text>
           </Box>
           <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
         </Flex>
         <Flex justifyContent='space-between' >
           <Box>
-            <Text fontSize='14px'>Building a mapping platform with React and Mapbox</Text>
+            <Text fontSize='14px' color='white'>Building a mapping platform with React and Mapbox</Text>
             <Text fontSize='14px' color='#9A9A9A'>The intersection observer web API</Text>
           </Box>
           <Text fontSize='14px' color='#9A9A9A' >Dec 17, 2021</Text>
