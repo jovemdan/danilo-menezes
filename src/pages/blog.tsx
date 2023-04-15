@@ -6,18 +6,18 @@ export default function Blog() {
     <>
       <SelectedTitle title='Selected posts' />
       <Box mt={[25, 25, 28]} maxW='660px'>
-        <InputGroup>
-          {/* <InputRightElement
+        {/* <InputGroup>
+          <InputRightElement
             pointerEvents='none'
             children={<SearchIcon color='gray.300' />}
-          /> */}
+          />
           <InputRightElement
             pointerEvents='none'
           >
             <SearchIcon color='gray.300' />
           </InputRightElement>
           <Input type='tel' placeholder='Search posts...' focusBorderColor='#FF9900' />
-        </InputGroup>
+        </InputGroup> */}
       </Box>
       <Flex mt={[16]} maxW='660px' flexDirection='column' gap='30px'>
         <Flex justifyContent='space-between' >
