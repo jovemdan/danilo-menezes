@@ -63,18 +63,36 @@ export function ProjectDescription({
               {description}
             </Text>
           </Link>
-          <Link href={githubUrl} target='_blank'>
-            <Text
-              fontWeight='700'
-              fontSize={['14px', '15px', '16px']}
-              color='#FF9900'
-              mt='10px'
-              transition='0.9s'
-              _hover={{ opacity: 0.5 }}
-            >
-              View in Github
-            </Text>
-          </Link>
+          {
+            githubUrl ? (
+              <Link href={githubUrl} target='_blank'>
+                <Text
+                  fontWeight='700'
+                  fontSize={['14px', '15px', '16px']}
+                  color='#FF9900'
+                  mt='10px'
+                  transition='0.9s'
+                  _hover={{ opacity: 0.5 }}
+                >
+                  View in Github
+                </Text>
+              </Link>
+            )
+              :
+              <Link href={githubUrl} target='_blank'>
+                <Text
+                  fontWeight='700'
+                  fontSize={['14px', '15px', '16px']}
+                  color='#FF9900'
+                  mt='10px'
+                  transition='0.9s'
+                  _hover={{ opacity: 0.5 }}
+                >
+                  View in Web
+                </Text>
+              </Link>
+          }
+
 
           <Link href={projectUrl} target='_blank'>
             <Image
