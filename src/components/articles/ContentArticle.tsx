@@ -1,7 +1,8 @@
 import { Box, Text } from '@chakra-ui/react'
 import ReactMarkdown from 'react-markdown'
+import remarkHtml from 'remark-html'
 import { useBlog } from '../../hooks/useBlog'
-
+import breaks from 'remark-breaks'
 export function ContentArticle() {
   const { postById } = useBlog()
 
@@ -9,9 +10,12 @@ export function ContentArticle() {
     <Box>
       <Text color='white'>
         <ReactMarkdown
+          remarkPlugins={[breaks, remarkHtml]}
           components={{
-            a: ({ node, ...props }) => <a className="text-blue" {...props}></a>
+            a: ({ node, ...props }) => <a className="text-blue" {...props}></a>,
+            p: ({ node, ...props }) => <p {...props} style={{ whiteSpace: 'pre-line' }} />,
           }}
+          skipHtml={true}
         >
           {postById.content}
         </ReactMarkdown>
