@@ -62,7 +62,7 @@ export function BlogProvider({ children }: BlogProviderProps) {
   async function fetchPostById(number: number) {
     setPostById({} as PostsType)
 
-    const { data } = await api.get(`/repos/pceolato/ignite-challenge-github-blog/issues/${number}`)
+    const { data } = await api.get(`/repos/jovemdan/danilo-menezes/issues/${number}`)
 
     setPostById({
       id: data.id,
@@ -79,7 +79,7 @@ export function BlogProvider({ children }: BlogProviderProps) {
   async function searchPost(content: string) {
     const { data } = await api.get('/search/issues', {
       params: {
-        q: `${content}repo:pceolato/ignite-challenge-github-blog`
+        q: `${content}repo:jovemdan/danilo-menezes`
       }
     }
     )
