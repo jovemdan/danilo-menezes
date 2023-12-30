@@ -18,21 +18,21 @@ export default function Blog() {
       </Box>
       <Flex mt={[16]} maxW={['450px', '660px']} flexDirection='column' gap='30px'>
         <Flex justifyContent='space-between' cursor='pointer' >
-          <Link href={'/blog/1'}>
+          <Link href={'/blog/10'}>
             <Text fontSize={'14px'} color='white' _hover={{ color: '#FF9900' }} transition='0.9s'>Building a mapping platform with React and Mapbox</Text>
             <Text fontSize={'14px'} color='#9A9A9A'>The intersection observer web API</Text>
           </Link>
           <Text fontSize={['10px', '14px']} display={['none', 'none', 'block']} color='#9A9A9A' >Dec 17, 2021</Text>
         </Flex>
         <Flex justifyContent='space-between' cursor='pointer'>
-          <Link href={'/blog/1'}>
+          <Link href={'/blog/10'}>
             <Text fontSize={'14px'} color='white' _hover={{ color: '#FF9900' }} transition='0.9s'>Building a mapping platform with React and Mapbox</Text>
             <Text fontSize={'14px'} color='#9A9A9A'>The intersection observer web API</Text>
           </Link>
           <Text fontSize={['10px', '14px']} display={['none', 'none', 'block']} color='#9A9A9A' >Dec 17, 2021</Text>
         </Flex>
         <Flex justifyContent='space-between' cursor='pointer'>
-          <Link href={'/blog/1'}>
+          <Link href={'/blog/10'}>
             <Text fontSize={'14px'} color='white' _hover={{ color: '#FF9900' }} transition='0.9s'>Building a mapping platform with React and Mapbox</Text>
             <Text fontSize={'14px'} color='#9A9A9A'>The intersection observer web API</Text>
           </Link>
