@@ -61,9 +61,9 @@ export function BlogProvider({ children }: BlogProviderProps) {
 
   async function fetchPostById(number: number) {
     setPostById({} as PostsType)
-    console.log('number', number)
+
     const { data } = await api.get(`/repos/pceolato/ignite-challenge-github-blog/issues/${number}`)
-    console.log('data', data)
+
     setPostById({
       id: data.id,
       user: data.user.login,

@@ -12,7 +12,6 @@ export function Atrticle({ image, slug }: ArticleProps) {
 
   function getPost() {
     fetchPostById(Number(slug))
-    console.log('slug', slug)
   }
 
   useEffect(() => {
