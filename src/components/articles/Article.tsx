@@ -8,7 +8,7 @@ interface ArticleProps {
   slug: string
 }
 export function Atrticle({ image, slug }: ArticleProps) {
-  const { fetchPostById, postById } = useBlog()
+  const { fetchPostById } = useBlog()
 
   function getPost() {
     fetchPostById(Number(slug))
