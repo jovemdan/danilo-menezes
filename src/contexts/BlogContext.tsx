@@ -33,16 +33,11 @@ export function BlogProvider({ children }: BlogProviderProps) {
   const [totalPosts, setTotalPosts] = useState(0)
 
   async function fetchAllPosts() {
-    const { data } = await api.get('/search/issues', {
-      params: {
-        q: 'repo:pceolato/ignite-challenge-github-blog'
-      }
-    }
-    )
-
+    const { data } = await api.get('/repos/jovemdan/danilo-menezes/issues')
+    console.log('data', data)
     const postsTotal: PostsType[] = []
 
-    data.items.map((post: any) => {
+    data.map((post: any) => {
       postsTotal.push({
         id: post.id,
         user: post.user.login,
