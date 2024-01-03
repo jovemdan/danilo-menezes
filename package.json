@@ -11,7 +11,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.16",
     "@chakra-ui/react": "^2.4.7",
-    "@emotion/react": "^11",
+    "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11",
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",
@@ -27,6 +27,7 @@
     "next": "13.1.1",
     "nprogress": "^0.2.0",
     "react": "18.2.0",
+    "react-awesome-reveal": "^4.2.7",
     "react-dom": "18.2.0",
     "react-markdown": "^9.0.1",
     "remark-breaks": "^4.0.0",
