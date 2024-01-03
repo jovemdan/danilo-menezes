@@ -4,6 +4,7 @@ import { formatDistanceToNowStrict, formatISO } from 'date-fns'
 import { pt } from 'date-fns/locale'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import { Fade } from 'react-awesome-reveal'
 import { SelectedTitle } from '../../components/common/selected-title'
 import { useBlog } from '../../hooks/useBlog'
 export default function Blog() {
@@ -41,11 +42,13 @@ export default function Blog() {
           const createdAt = formatISO(issue.date, { representation: 'date' })
           return (
             <Flex key={issue.id} justifyContent='space-between' cursor='pointer' >
-              <Link href={'/blog/10'}>
-                <Text fontSize={'14px'} color='white' _hover={{ color: '#FF9900' }} transition='0.9s'>{issue.title}</Text>
-                <Text fontSize={'14px'} color='#9A9A9A'>{createdAt}</Text>
-              </Link>
-              <Text fontSize={['10px', '14px']} display={['none', 'none', 'block']} color='#9A9A9A' >{date}</Text>
+              <Fade delay={1e2} cascade damping={1e-1}>
+                <Link href={'/blog/10'}>
+                  <Text fontSize={'14px'} color='white' _hover={{ color: '#FF9900' }} transition='0.9s'>{issue.title}</Text>
+                  <Text fontSize={'14px'} color='#9A9A9A'>{createdAt}</Text>
+                </Link>
+                <Text fontSize={['10px', '14px']} display={['none', 'none', 'block']} color='#9A9A9A' >{date}</Text>
+              </Fade>
             </Flex>
           )
         })
