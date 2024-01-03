@@ -3,7 +3,10 @@ import ReactMarkdown from 'react-markdown'
 import remarkHtml from 'remark-html'
 import { useBlog } from '../../hooks/useBlog'
 import breaks from 'remark-breaks'
-export function ContentArticle() {
+interface ContentArticleProps {
+  content: string
+}
+export function ContentArticle({ content }: ContentArticleProps) {
   const { postById } = useBlog()
 
   return (

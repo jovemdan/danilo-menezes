@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import { Fade } from 'react-awesome-reveal'
 import { SelectedTitle } from '../../components/common/selected-title'
 import { useBlog } from '../../hooks/useBlog'
+import { formatDate } from '../../utils/dateFormat'
 export default function Blog() {
   const { fetchAllPosts } = useBlog()
 
@@ -39,11 +40,11 @@ export default function Blog() {
           const date = formatDistanceToNowStrict(Date.parse(issue.date), {
             locale: pt
           })
-          const createdAt = formatISO(issue.date, { representation: 'date' })
+          const createdAt = formatDate(issue.date)
           return (
             <Flex key={issue.id} justifyContent='space-between' cursor='pointer' >
               <Fade delay={1e2} cascade damping={1e-1}>
-                <Link href={'/blog/10'}>
+                <Link href={`/blog/${issue.number}`}>
                   <Text fontSize={'14px'} color='white' _hover={{ color: '#FF9900' }} transition='0.9s'>{issue.title}</Text>
                   <Text fontSize={'14px'} color='#9A9A9A'>{createdAt}</Text>
                 </Link>

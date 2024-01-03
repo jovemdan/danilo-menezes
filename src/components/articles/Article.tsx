@@ -1,7 +1,8 @@
 import { Box, Flex, Image, Link, Text } from '@chakra-ui/react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Fade, Slide } from 'react-awesome-reveal'
 import { useBlog } from '../../hooks/useBlog'
+import { formatDate } from '../../utils/dateFormat'
 import { ContentArticle } from './ContentArticle'
 
 interface ArticleProps {
@@ -9,15 +10,29 @@ interface ArticleProps {
   slug: string
 }
 export function Atrticle({ image, slug }: ArticleProps) {
-  const { fetchPostById } = useBlog()
+  const { fetchPostById, postById } = useBlog()
+  const [formattedDate, setFormattedDate] = useState<string>('')
 
-  function getPost() {
-    fetchPostById(Number(slug))
+  async function getPost() {
+    await fetchPostById(Number(slug))
   }
 
   useEffect(() => {
     getPost()
-  }, [])
+  }, [slug])
+
+  useEffect(() => {
+    if (postById && postById.date) {
+      const formattedDate = formatDate(postById.date)
+      console.log('formattedDate', formattedDate)
+      setFormattedDate(formattedDate)
+    }
+  }, [postById])
+
+  if (!postById) {
+    return <p>Loading...</p>
+  }
+
   return (
     <>
       <Fade delay={1e2} cascade damping={1e-1}>
@@ -65,7 +80,7 @@ export function Atrticle({ image, slug }: ArticleProps) {
             color='white'
             cursor='pointer'
             transition='0.9s'
-            _hover={{ color: '#FF9900' }} >Styling Radix UI with CSS
+            _hover={{ color: '#FF9900' }} >{postById.title}
           </Text>
           <Text fontWeight='light'
             fontSize={['14px', '15px', '16px']}
@@ -73,11 +88,11 @@ export function Atrticle({ image, slug }: ArticleProps) {
             opacity={0.6}
             alignItems='left'
             mt='2px'
-            transition='0.9s'>Dec 14, 2021
+            transition='0.9s'>{formattedDate}
           </Text>
         </Flex>
         <Box mt={10}>
-          <ContentArticle />
+          <ContentArticle content={postById.content} />
         </Box>
       </Fade>
     </>
