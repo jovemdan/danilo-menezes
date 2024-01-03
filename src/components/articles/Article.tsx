@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Image, Link, Text } from '@chakra-ui/react'
 import { useEffect } from 'react'
 import { useBlog } from '../../hooks/useBlog'
 import { ContentArticle } from './ContentArticle'
@@ -19,17 +19,40 @@ export function Atrticle({ image, slug }: ArticleProps) {
   }, [])
   return (
     <>
-      <Box mt={40} >
+      <Flex flexDirection={'column'} mt={['10', '12', '32']} gap={2}>
+        <Link href='/blog'>
+          <Flex flexDirection={'row'} gap={2}>
+            <Image
+              src={'/back.svg'}
+              alt={'voltar'}
+              w={'24px'}
+              cursor='pointer'
+              transition='0.9s'
+              _hover={{ color: '#FFF' }}
+            >
+            </Image>
+            <Text color='white' cursor='pointer'
+              transition='0.9s'
+              _hover={{ color: '#FF9900' }}>
+              See all posts
+            </Text>
+          </Flex>
+        </Link>
+
+
         <Image
           src={image}
           alt={image}
           mt='16px'
           w={['100%']}
           height='285px'
+          bgSize='cover'
+          objectFit='cover'
+          bgRepeat='no-repeat'
           borderRadius={'15px'}
         >
         </Image>
-      </Box>
+      </Flex>
 
       <Flex mt={10} gap={5} flexDirection={'column'}>
         <Text fontSize={['15px', '20px', '24px']}
