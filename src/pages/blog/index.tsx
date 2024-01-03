@@ -1,7 +1,7 @@
 import { SearchIcon } from '@chakra-ui/icons'
 import { Box, Flex, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react'
 import { formatDistanceToNowStrict, formatISO } from 'date-fns'
-import { pt } from 'date-fns/locale'
+import { enUS } from 'date-fns/locale'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { Fade } from 'react-awesome-reveal'
@@ -38,7 +38,7 @@ export default function Blog() {
       <Flex mt={[16]} maxW={['450px', '660px']} flexDirection='column' gap='30px'>
         {posts.map(issue => {
           const date = formatDistanceToNowStrict(Date.parse(issue.date), {
-            locale: pt
+            locale: enUS
           })
           const createdAt = formatDate(issue.date)
           return (
