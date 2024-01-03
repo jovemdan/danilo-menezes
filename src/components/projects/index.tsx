@@ -51,7 +51,7 @@ export function ProjectDescription({
             </Text>
             <Text
               as='p'
-              fontWeight='700'
+              fontWeight='400'
               fontSize={['14px', '15px', '16px']}
               color='white'
               opacity={0.6}
