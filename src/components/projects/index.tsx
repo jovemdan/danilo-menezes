@@ -81,7 +81,7 @@ export function ProjectDescription({
                 </Link>
               )
                 :
-                <Link href={githubUrl} target='_blank'>
+                <Link href={projectUrl} target='_blank'>
                   <Text
                     fontWeight='700'
                     fontSize={['14px', '15px', '16px']}
